@@ -1,5 +1,5 @@
 # ResiliaFlix
-É o projeto de encerramento do módulo 2 - Grupo 05, ResiliaFlix é um catálogo virtual de filmes que ajudam-vos a sair da rotina e encontrar os melhores filmes da categoria [Tech/Negocios?] 
+É o projeto de encerramento do módulo 2 - Grupo 05, ResiliaFlix é um catálogo virtual de filmes que vai ajudar você a sair da rotina e encontrar os melhores filmes da categoria [Tech/Negocios?] Todos os nossos filmes têm um propósito e varia dede(Mudança de hábito, desenvolver uma nova habilidade ou se tornar numa pessoa melhor).
 
 # Tecnologias utilizadas 
 1. HTML/CSS
