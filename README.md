@@ -6,6 +6,7 @@
 2. Javascript 
 3. Bootstrap 
 4. jQuery
+5. Figma
 
 # Integrantres do grupo
 1. Yara Proença Gonçalves de Oliveira 
