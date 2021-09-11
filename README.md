@@ -9,7 +9,7 @@
 5. Figma
 
 # Integrantres do grupo
-1. Yara Proença Gonçalves de Oliveira 
+1. Yara Proença Carvalho de Oliveira 
 2. Fernando Agostini 
 3. Amadeu Alexandre Filipe
 4. Ravel dos Santos Nogueira 
