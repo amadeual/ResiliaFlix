@@ -21,7 +21,7 @@ body {
 
 .carouselImg {
   /* padding: 5px; */
-  object-fit: cover%;
+  object-fit: cover;
   /* object-position: 0 20%; */
   height: 600px;
   background-color: #ac7878;
