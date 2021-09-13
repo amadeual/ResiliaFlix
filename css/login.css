@@ -21,7 +21,7 @@ body {
   height: 400px;
   background-color: #ac7878;
 }
-.login{
+.login {
   width: 500px;
   padding: 40px;
   position: fixed;
@@ -30,6 +30,7 @@ body {
   transform: translate(-50%,-50%);
   background: #191919;
   text-align: center;
+  border-radius: 24px;
 }
 .login h1{
   color: white;
