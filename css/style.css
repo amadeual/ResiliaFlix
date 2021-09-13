@@ -20,17 +20,13 @@ body {
 }
 
 .carouselImg {
-  /* padding: 5px; */
   object-fit: cover;
-  /* object-position: 0 20%; */
   height: 600px;
-  background-color: #ac7878;
 }
-
-/* .text-center{
-  background-color: rgba(0, 0, 0, 0.2);
-} */
 
 .footcopy {
   color: white;
 }
+
+
+
