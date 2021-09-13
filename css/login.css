@@ -1,4 +1,11 @@
 body {
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "main"
+    "footer";
+  grid-template-columns: auto;
+  grid-template-rows: 8% 78vh auto;
   margin: 0%;
   padding: 0%;
   background: #0f0c29; /* fallback for old browsers */
@@ -15,6 +22,12 @@ body {
     #000000
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+.navFont{
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 28px;
+}
+
 .login {
   /* padding: 5px; */
   object-fit: cover;
@@ -75,13 +88,22 @@ body {
 .login-senha {
   color: white;
   align-items: center;
-  position: absolute;
+  /* position: absolute; */
   left: 40%;
 }
-
+a{
+  text-decoration: none;
+  color: aliceblue;
+}
 .footlogin {
+  grid-area: footer;
+  
+  /* 
   position: absolute;
   margin-top: 40%;
   width: 60%;
-  left: 20%;
+  left: 20%; */
+}
+.footcopy {
+  color: white;
 }

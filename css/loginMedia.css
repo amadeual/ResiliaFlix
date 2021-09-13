@@ -1,0 +1,27 @@
+@media (max-width: 979px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "nav"
+      "main"
+      "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 18% 78vh auto;
+  }
+  .footlogin {
+    grid-area: footer;
+  }
+}
+
+@media(min-width: 200px){
+  body {
+    display: grid;
+    grid-template-areas:
+      "nav"
+      "main"
+      "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 10% 85vh auto;
+  }
+
+}
