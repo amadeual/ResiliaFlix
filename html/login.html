@@ -13,55 +13,78 @@
 
   <!--Style-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/login.css">
-  <link rel="stylesheet" href="./css/loginMedia.css">
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/loginMedia.css">
   <!--Script-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous" defer></script>
-  <script src="./Script/apis.js"></script>
+  <script src="../Script/apis.js"></script>
   <!--Icon-->
-  <link rel="shortcut icon" href="./assets/svg/camera-reels.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="../assets/svg/camera-reels.svg" type="image/x-icon">
   <title>ResiliaFlix | Login</title>
 </head>
 
 <body>
-  <!--Navegation-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="./assets/img/logoIcon.png" alt="Logo ResiliaFlix"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse navFont" id="navbarNavAltMarkup">
-        <div class="navbar-nav d-flex justify-content-start">
-          <a class="nav-link active" aria-current="page" href="https://amadeual.github.io/ResiliaFlix/index.html#">Home</a>
-          <a class="nav-link" href="#">Filmes</a>
-        </div>
-        <div class="collapse navbar-collapse  navbar-nav  d-flex justify-content-end" id="navbarNavAltMarkup">
-          <a class="nav-link" href="#">Login</a>
-        </div>
-      </div>
+  <header>
+    <div class="logo">
+      <h1>
+        <a href="../index.html">
+          <img src="../assets/img/logoIcon.png" alt="">
+        </a>
+      </h1>
     </div>
-  </nav>
+  </header>
+
   <!--Formulário de login-->
   <div>
-    <form class="login" action="login.html" method="post">
+    <form class="login" method="post">
       <h1>Login</h1>
       <input type="text" name="" placeholder="Digite o seu usuário">
       <input type="password" name="" placeholder="Digite a sua senha">
-      <input type="submit" name="" value="Login">
-      <p class="login-senha"><a href="">Esqueci a minha senha</a></p>
+      <a href="../index.html">
+        <input type="submit" name="" value="Login">
+      </a>
+      <p class="login-senha"><a class="aLogin" href="./passwordRecovery.html">Esqueci a minha senha</a></p>
+      <p class="login-senha">Não possui login? Faça seu cadastro <a class="aLogin" href="./registrationForm.html">AQUI!</a></p>
     </form>
   </div>
 
-<!--Footer-->
-  <div class="footlogin">
-    <footer class="bg-dark text-center text-lg-start">
+  <!--Footer-->
+  <div class="footer">
+    <footer class="bg text-center text-lg-start">
       <div>
+        <ul>
+          <li>
+            <a href="https://github.com/amadeual" target="_blank">
+              Amadeu Alexandre Filipe
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/FernandoAgostini28" target="_blank">
+              Fernando Agostini
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              Gabriela de Oliveira Gentile
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/nogueiraravel" target="_blank">
+              Ravel dos Santos Nogueira
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/YaraProenca" target="_blank">
+              Yara Proença Carvalho de Oliveira
+            </a>
+          </li>
+        </ul>
+
         <div class="text-center p-3">
           <p class="footcopy">Projeto realizado para fins educativos © 2021 Copyright:</p>
-          <a class="text-white" href="#">Resilia Educação</a>
+          <a class="text-white" href="https://www.resilia.com.br/" target="_blank">Resilia Educação</a>
         </div>
       </div>
     </footer>

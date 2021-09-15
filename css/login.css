@@ -8,32 +8,34 @@ body {
   grid-template-rows: 8% 78vh auto;
   margin: 0%;
   padding: 0%;
-  background: #0f0c29; /* fallback for old browsers */
+  background: #0f0c29; 
   background: -webkit-linear-gradient(
     to right,
     #16161f,
     #111014,
     #000000
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  );
   background: linear-gradient(
     to right,
     #16161f,
     #111014,
     #000000
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ); 
+  font-family: 'Fjalla One', sans-serif;
 }
 
-.navFont{
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 28px;
+.logo{
+  padding: 1rem 2rem;
+  position: fixed;
 }
 
 .login {
   /* padding: 5px; */
   object-fit: cover;
-  height: 400px;
+  height: 450px;
   background-color: #ac7878;
 }
+
 .login {
   width: 500px;
   padding: 40px;
@@ -45,11 +47,13 @@ body {
   text-align: center;
   border-radius: 24px;
 }
+
 .login h1{
   color: white;
   text-transform: uppercase;
   font-weight: 500;
 }
+
 .login input[type = "text"],.login input[type = "password"]{
   border: 0;
   background: none;
@@ -64,10 +68,12 @@ body {
   border-radius: 24px;
   transition: 0.25s;
 }
+
 .login input[type = "text"]:focus,.login input[type = "password"]:focus{
   width: 280px;
   border-color: #ac7878;
 }
+
 .login input[type = "submit"]{
   border:0;
   background: none;
@@ -82,28 +88,65 @@ body {
   transition: 0.25s;
   cursor: pointer;
 }
+
 .login input[type = "submit"]:hover{
   background: #ac7878;
 }
+
 .login-senha {
   color: white;
   align-items: center;
   /* position: absolute; */
   left: 40%;
 }
-a{
+
+.aLogin{
   text-decoration: none;
   color: aliceblue;
 }
+
+.aLogin:hover{
+  color: #ac7878;
+}
+
+.bg{
+  background-color: rgba(0,0,0,0.2);
+  padding: 1rem;
+}
+
+ul{
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 1rem;
+  text-indent: -0.7rem;
+}
+
+li::before{
+
+  content: "🦉";
+}
+
+a{
+  text-decoration: none;
+  color: #8C8C8C;
+}
+
+a:hover{
+  color: orangered;
+}
+
 .footlogin {
   grid-area: footer;
-  
-  /* 
-  position: absolute;
-  margin-top: 40%;
-  width: 60%;
-  left: 20%; */
 }
+
 .footcopy {
   color: white;
 }

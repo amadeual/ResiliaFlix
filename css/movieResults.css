@@ -25,10 +25,42 @@ body {
   font-size: 28px;
 }
 
+.bg{
+  background-color: rgba(0,0,0,0.2);
+  padding: 1rem;
+}
 
-.footer{
+ul{ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 1rem;
+  text-indent: -0.7rem;
+}
+
+li::before{
+  content: "🦉";
+}
+
+a{
+  text-decoration: none;
+  color: #8C8C8C;
+}
+
+a:hover{
+  color: orangered;
+}
+
+.footer {
   grid-area: footer;
 }
+
 .footcopy {
   color: white;
 }
