@@ -1,0 +1,62 @@
+/* Estilização da cor de fundo, body geral */
+body {
+  display: grid;
+  background: #0f0c29; 
+  background: -webkit-linear-gradient(
+    to right,
+    #16161f,
+    #111014,
+    #000000
+  );
+  background: linear-gradient(
+    to right,
+    #16161f,
+    #111014,
+    #000000
+  ); 
+  font-family: 'Fjalla One', sans-serif;
+}
+
+/* Estilização do footer */
+
+.bg{
+  background-color: rgba(0,0,0,0.2);
+  padding: 1rem;
+}
+
+ul{
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 1rem;
+  text-indent: -0.7rem;
+}
+
+li::before{
+
+  content: "🦉";
+}
+
+a{
+  text-decoration: none;
+  color: #8C8C8C;
+}
+
+a:hover{
+  color: orangered;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.footcopy {
+  color: white;
+}

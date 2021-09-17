@@ -25,7 +25,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg">
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg">
     <div class="container-fluid">
       <a class="navbar-brand" href="../index.html"><img src="../assets/img/logoIcon.png" alt="Logo ResiliaFlix"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,56 +41,105 @@
         </div>
       </div>
     </div>
+  </nav> -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg">
+    <div class=" navFont container-fluid">
+      <img class="logoIcon" src="../assets/img/testeIcon.png" alt="">
+      <a class="navbar-brand logoTxt" href="../index.html">ResiliaFlix</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active txtNavBar" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link txtNavBar" href="./contacts.html">Contato</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle txtNavBar" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Login
+            </a>
+            <ul class="dropdown-menu txtNavBar" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item txtNavBar" href="../html/login.html">Faça seu login</a></li>
+              <li><a class="dropdown-item txtNavBar" href="../html/registrationForm.html">Ainda não é inscrito?</a></li>
+              <li>
+                <hr class="dropdown-divider txtNavBar">
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link txtNavBar" href="../html/movieSearch.html">Filmes</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="myInput form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button id="movieSearch" class="myBtn btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
   </nav>
   <!--Busca de filme-->
 
   <main>
-    
+    <div class="searchDivBox">
+      <div class="titleDiv">
+        <h1>Busque o filme que deseja assitir:</h1>
+      </div>
+
+      <form class="boxForm">
+        <input type="text" placeholder="Digite o nome do filme" name="" id="movieSearch">
+        <div class="button" id="btn"><a href="../html/movieResults.html"><img src="../assets/img/searchIcon (1).png"></a></div>
+      </form>
+    </div>
   </main>
 
-
-
   <!--AQUI VAI AS DIVS DOS RESULTADOS DOS FILMES FICARÃO COMO DISPLAY NONE-->
-
-  <div><img></div>
-  <div><img></div>
-  <div><img></div>
-  <div><img></div>
-  <div><img></div>
-  <div><img></div>
-  <div><img></div>
-  <div><img></div>
-  <div><img></div>
-  <div><img></div>
-  <div><img></div>
-  <div><img></div>
+  <section class="movieRes">
+    <div class="boxMovies">
+      <div class="moviesPic" id="movie1"><img src="../assets/img/teste2.png"></div>
+      <div class="moviesPic" id="movie2"><img src="../assets/img/Tyler on Twitter.png"></div>
+      <div class="moviesPic" id="movie3"><img src="../assets/img/teste2.png"></div>
+      <div class="moviesPic" id="movie4"><img src="../assets/img/Tyler on Twitter.png"></div>
+      <div class="moviesPic" id="movie5"><img src="../assets/img/teste2.png"></div>
+      <div class="moviesPic" id="movie6"><img src="../assets/img/Tyler on Twitter.png"></div>
+      <div class="moviesPic" id="movie7"><img src="../assets/img/teste2.png"></div>
+      <div class="moviesPic" id="movie8"><img src="../assets/img/Tyler on Twitter.png"></div>
+      <div class="moviesPic" id="movie9"><img src="../assets/img/teste2.png"></div>
+      <div class="moviesPic" id="movie10"><img src="../assets/img/Tyler on Twitter.png"></div>
+      <div class="moviesPic" id="movie11"><img src="../assets/img/teste2.png"></div>
+      <div class="moviesPic" id="movie12"><img src="../assets/img/Tyler on Twitter.png"></div>
+    </div>
+  </section>
 
   <!--Footer-->
   <div class="footer">
     <footer class="bg text-center text-lg-start">
       <div>
         <ul>
-          <li>
+          <li class="list">
             <a href="https://github.com/amadeual" target="_blank">
               Amadeu Alexandre Filipe
             </a>
           </li>
-          <li>
+          <li class="list">
             <a href="https://github.com/FernandoAgostini28" target="_blank">
               Fernando Agostini
             </a>
           </li>
-          <li>
+          <li class="list">
             <a href="#" target="_blank">
               Gabriela de Oliveira Gentile
             </a>
           </li>
-          <li>
+          <li class="list">
             <a href="https://github.com/nogueiraravel" target="_blank">
               Ravel dos Santos Nogueira
             </a>
           </li>
-          <li>
+          <li class="list">
             <a href="https://github.com/YaraProenca" target="_blank">
               Yara Proença Carvalho de Oliveira
             </a>
