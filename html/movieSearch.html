@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  <!--Style-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/movieSearch.css">
+  <link rel="stylesheet" href="../css/media.css">
+  <!--Script-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous" defer></script>
+  <script src="../Script/apis.js"></script>
+  <!--Icon-->
+  <link rel="shortcut icon" href="../assets/svg/camera-reels.svg" type="image/x-icon">
+  <title>ResiliaFlix | Busca de Filmes</title>
+</head>
+
+<body>
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html"><img src="../assets/img/logoIcon.png" alt="Logo ResiliaFlix"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navFont" id="navbarNavAltMarkup">
+        <div class="navbar-nav d-flex justify-content-start">
+          <a class="nav-link active" aria-current="page" href="contacts.html">Contato</a>
+          <a class="nav-link" href="movieSearch.html">Filmes</a>
+        </div>
+        <div class="collapse navbar-collapse  navbar-nav  d-flex justify-content-end" id="navbarNavAltMarkup">
+          <a class="nav-link" href="login.html">Login</a>
+        </div>
+      </div>
+    </div>
+  </nav> -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg">
+    <div class=" navFont container-fluid">
+      <img class="logoIcon" src="../assets/img/testeIcon.png" alt="">
+      <a class="navbar-brand logoTxt" href="../index.html">ResiliaFlix</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active txtNavBar" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link txtNavBar" href="./contacts.html">Contato</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle txtNavBar" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Login
+            </a>
+            <ul class="dropdown-menu txtNavBar" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item txtNavBar" href="../html/login.html">Faça seu login</a></li>
+              <li><a class="dropdown-item txtNavBar" href="../html/registrationForm.html">Ainda não é inscrito?</a></li>
+              <li>
+                <hr class="dropdown-divider txtNavBar">
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link txtNavBar" href="../html/movieSearch.html">Filmes</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="myInput form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button id="movieSearch" class="myBtn btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--Busca de filme-->
+
+  <main>
+    <div class="searchDivBox">
+      <div class="titleDiv">
+        <h1>Busque o filme que deseja assitir:</h1>
+      </div>
+
+      <form class="boxForm">
+        <input type="text" placeholder="Digite o nome do filme" name="" id="movieSearch">
+        <div class="button" id="btn"><a href="../html/movieResults.html"><img src="../assets/img/searchIcon (1).png"></a></div>
+      </form>
+    </div>
+  </main>
+
+  <!--AQUI VAI AS DIVS DOS RESULTADOS DOS FILMES FICARÃO COMO DISPLAY NONE-->
+  <section class="movieRes">
+    <div class="boxMovies">
+      <div class="moviesPic" id="movie1"><img src="../assets/img/teste2.png"></div>
+      <div class="moviesPic" id="movie2"><img src="../assets/img/Tyler on Twitter.png"></div>
+      <div class="moviesPic" id="movie3"><img src="../assets/img/teste2.png"></div>
+      <div class="moviesPic" id="movie4"><img src="../assets/img/Tyler on Twitter.png"></div>
+      <div class="moviesPic" id="movie5"><img src="../assets/img/teste2.png"></div>
+      <div class="moviesPic" id="movie6"><img src="../assets/img/Tyler on Twitter.png"></div>
+      <div class="moviesPic" id="movie7"><img src="../assets/img/teste2.png"></div>
+      <div class="moviesPic" id="movie8"><img src="../assets/img/Tyler on Twitter.png"></div>
+      <div class="moviesPic" id="movie9"><img src="../assets/img/teste2.png"></div>
+      <div class="moviesPic" id="movie10"><img src="../assets/img/Tyler on Twitter.png"></div>
+      <div class="moviesPic" id="movie11"><img src="../assets/img/teste2.png"></div>
+      <div class="moviesPic" id="movie12"><img src="../assets/img/Tyler on Twitter.png"></div>
+    </div>
+  </section>
+
+  <!--Footer-->
+  <div class="footer">
+    <footer class="bg text-center text-lg-start">
+      <div>
+        <ul>
+          <li class="list">
+            <a href="https://github.com/amadeual" target="_blank">
+              Amadeu Alexandre Filipe
+            </a>
+          </li>
+          <li class="list">
+            <a href="https://github.com/FernandoAgostini28" target="_blank">
+              Fernando Agostini
+            </a>
+          </li>
+          <li class="list">
+            <a href="#" target="_blank">
+              Gabriela de Oliveira Gentile
+            </a>
+          </li>
+          <li class="list">
+            <a href="https://github.com/nogueiraravel" target="_blank">
+              Ravel dos Santos Nogueira
+            </a>
+          </li>
+          <li class="list">
+            <a href="https://github.com/YaraProenca" target="_blank">
+              Yara Proença Carvalho de Oliveira
+            </a>
+          </li>
+        </ul>
+
+        <div class="text-center p-3">
+          <p class="footcopy">Projeto realizado para fins educativos © 2021 Copyright:</p>
+          <a class="text-white" href="https://www.resilia.com.br/" target="_blank">Resilia Educação</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

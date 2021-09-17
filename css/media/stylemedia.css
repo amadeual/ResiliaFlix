@@ -1,7 +1,8 @@
-@media(min-width:2000px){
-
-  .carouselImg{
+@media (min-width: 2000px) {
+  .carouselImg {
     object-position: 0 20%;
     height: 900px;
   }
 }
+
+

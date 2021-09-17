@@ -1,22 +1,58 @@
 body {
-  background: #0f0c29; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #16161f,
-    #111014,
-    #000000
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #16161f,
-    #111014,
-    #000000
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #16161f, #111014, #000000);
+  background: linear-gradient(to right, #16161f, #111014, #000000);
 }
 
-.navFont{
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 28px;
+.logoTxt {
+  font-size: 2rem;
+  color: #ffd000 !important;
+}
+
+.logoTxt:hover {
+  transform: scale(1.1);
+  transition: ease-in-out;
+  transition-delay: 8ms;
+  color: #8c8c8c !important;
+}
+
+.logoIcon {
+  width: 40px;
+  margin: 5px;
+}
+
+.navFont {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 25px;
+}
+
+.txtNavBar {
+  color: #8c8c8c !important;
+}
+
+.txtNavBar:hover {
+  color: #ffd000 !important;
+}
+
+.myBtn {
+  border-color: #ffd000;
+  color: #ffd000;
+  border-radius: 10px;
+}
+
+.myBtn:hover {
+  background-color: #ffd000;
+  border-color: #b1b1b1;
+  color: #111014;
+}
+
+.myInput {
+  border: 0;
+  outline: none;
+  display: block;
+  border-radius: 5px;
+  color: #b1b1b1;
+  background-color: #111014;
 }
 
 .carouselImg {
@@ -24,9 +60,56 @@ body {
   height: 600px;
 }
 
+.bg {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+
+.imgBehind {
+  width: 100%;
+  min-height: 10vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1% 0 1% 0%;
+}
+
+.myImg {
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 1rem;
+  text-indent: -0.7rem;
+}
+
+.list::before {
+  content: "🦉";
+}
+
+a {
+  text-decoration: none;
+  color: #8c8c8c;
+}
+
+a:hover {
+  color: orangered;
+}
+
+.footer {
+  grid-area: footer;
+}
+
 .footcopy {
   color: white;
 }
-
-
-
