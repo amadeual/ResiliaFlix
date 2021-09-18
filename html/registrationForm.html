@@ -15,6 +15,10 @@
   <link rel="stylesheet" href="../css/registrationForm.css">
   <link rel="stylesheet" href="../css/media.css">
   <link rel="stylesheet" href="../css/global.css">
+
+  <!--JS-->
+  <script src="../Script/cadastroLogin.js" defer></script>
+  
   <!--Script-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" crossorigin="anonymous"></script>
@@ -47,34 +51,34 @@
             </div>
 
             <div class="first">
-              <input type="text" placeholder="Nome" id="nameTxt" minlength="4" required>
+              <input type="text" placeholder="Nome" id="nameTxt" minlength="4" required  value="">
               <input type="text" placeholder="RG" name="RG" id="rgNumber" required>
             </div>
 
             <div class="second">
-              <input type="email" placeholder="E-mail" name="email" id="emailTxt">
+              <input type="email" placeholder="E-mail" name="email" id="emailTxt" value="">
               <input type="password" placeholder="Senha" id="senhaNumber" pattern=".{6,}" title="Six or more characters" autocomplete="off" required>
             </div>
 
             <div class="third">
-              <input type="text" placeholder="CEP" id="cepNumber" pattern=".{6,}" autocomplete="off" required>
-              <input type="text" placeholder="Estado" id="estadoTxt" minlength="4" autocomplete="off" required>
-              <input type="text" placeholder="Cidade" id="cidadeTxt" minlength="4" autocomplete="off" required>
+              <input type="text" placeholder="CEP" id="cepNumber" pattern=".{6,}" autocomplete="off" required value="">
+              <input type="text" placeholder="Estado" id="estadoTxt" minlength="2" autocomplete="off" required value="">
+              <input type="text" placeholder="Cidade" id="cidadeTxt" minlength="4" autocomplete="off" required value="">
             </div>
 
             <div class="fourth">
-              <input type="text" placeholder="Rua" id="ruaText" minlength="4" autocomplete="off" required>
+              <input type="text" placeholder="Rua" id="ruaText" minlength="4" autocomplete="off" required value="">
             </div>
 
             <div class="fifth">
-              <input type="text" placeholder="Bairro" id="bairroTxt" minlength="4" autocomplete="off" required>
-              <input type="text" placeholder="Nº" id="numNumber" minlength="4" autocomplete="off" required>
-              <input type="text" placeholder="compl." id="complNumber" minlength="4" autocomplete="off" required>
+              <input type="text" placeholder="Bairro" id="bairroTxt" minlength="4" autocomplete="off" required value="">
+              <input type="text" placeholder="Nº" id="numNumber" minlength="4" autocomplete="off" required value="">
+              <input type="text" placeholder="compl." id="complNumber" minlength="4" autocomplete="off" required value="">
             </div>
 
             <div class="divButton">
               <a href="./login.html">
-                <button id="button">Regitrar</button>
+                <button id="button" >Regitrar</button>
               </a>
             </div>
           </form>
