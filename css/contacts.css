@@ -33,10 +33,12 @@ body{
 
 .members {
   display: grid;
-  grid-template-columns: 33.33% 33.33% 33.33%;
-  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 33.33% 33.33% 33.33%;
   height: calc(100vh - 10%);
   justify-items: center;
+  align-items: center;
+  padding: 2%;
 }
 
 .imgDiv1{
@@ -45,23 +47,23 @@ body{
 }
 
 .imgDiv2:nth-child(2){
-  grid-column: 2;
-  grid-row: 1
+  grid-column: 3;
+  grid-row: 2;
 }
 
 .imgDiv3:nth-child(3){
-  grid-column: 3;
-  grid-row: 1
+  grid-column: 5;
+  grid-row: 1;
 }
 
 .imgDiv4:nth-child(4){
   grid-column: 1;
-  grid-row: 2
+  grid-row: 3;
 }
 
 .imgDiv5:nth-child(5){
-  grid-column: 3;
-  grid-row: 2;
+  grid-column: 5;
+  grid-row: 3;
   cursor: pointer;
 }
 

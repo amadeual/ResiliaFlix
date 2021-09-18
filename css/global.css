@@ -53,6 +53,9 @@ a:hover{
   color: orangered;
 }
 
+#resiliaA:hover{
+  color: #ffd000 !important;
+}
 .footer {
   grid-area: footer;
 }

@@ -14,66 +14,47 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/movieResults.css">
   <link rel="stylesheet" href="../css/media.css">
-  <link rel="stylesheet" href="../css/global.css">
   <!--Script-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous" defer></script>
   <script src="../Script/apis.js"></script>
   <!--Icon-->
-  <link rel="shortcut icon" href="../assets/svg/camera-reels.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="../assets/img/headIcon.png" type="image/x-icon">
   <title>ResiliaFlix | Resultados</title>
 </head>
 
 <body>
-  <!--Navegação-->
-  <!-- <nav class="navbar myNavBar navbar-expand-lg navbar-dark bg">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html"><img src="../assets/img/logoIcon.png" alt="Logo ResiliaFlix"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse navFont" id="navbarNavAltMarkup">
-        <div class="navbar-nav d-flex justify-content-start">
-          <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-          <a class="nav-link" href="movieSearch.html">Filmes</a>
-        </div>
-        <div class="collapse navbar-collapse  navbar-nav  d-flex justify-content-end" id="navbarNavAltMarkup">
-          <a class="nav-link" href="login.html">Login</a>
-        </div>
-      </div>
-    </div>
-  </nav> -->
-  
+  <!--Navegation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg">
     <div class=" navFont container-fluid">
-      <img class="logoIcon" src="../assets/img/testeIcon.png" alt="">
-      <a class="navbar-brand logoTxt" href="../index.html">ResiliaFlix</a>
+      <img class="logoIcon" src="./assets/img/testeIcon.png" alt="">
+      <a class="navbar-brand logoTxt" href="index.html">ResiliaFlix</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active txtNavBar" aria-current="page" href="../index.html">Home</a>
+            <a class="nav-link active txtNavBar" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link txtNavBar" href="./contacts.html">Contato</a>
+            <a class="nav-link txtNavBar" href="./html/contacts.html">Contato</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle txtNavBar" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Login
             </a>
             <ul class="dropdown-menu txtNavBar" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item txtNavBar" href="../html/login.html">Faça seu login</a></li>
-              <li><a class="dropdown-item txtNavBar" href="../html/registrationForm.html">Ainda não é inscrito?</a></li>
+              <li><a class="dropdown-item txtNavBar" href="./html/login.html">Faça seu login</a></li>
+              <li><a class="dropdown-item txtNavBar" href="./html/registrationForm.html">Ainda não é inscrito?</a></li>
               <li>
                 <hr class="dropdown-divider txtNavBar">
               </li>
             </ul>
           </li>
           <li class="nav-item ">
-            <a class="nav-link txtNavBar" href="../html/movieSearch.html">Filmes</a>
+            <a class="nav-link txtNavBar" href="./html/movieSearch.html">Filmes</a>
           </li>
         </ul>
         <form class="d-flex">
@@ -84,45 +65,59 @@
     </div>
   </nav>
 
-  <main>
+  <main class="mainBox" id="aboutMovie">
+    <div class="divBox">
+      <div class="imgDiv">
+        <img src="../assets/img/Tyler on Twitter.png">
+      </div>
+      <article class="movieInfo">
+        <h2>AQUI VAI O TITULO</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates quibusdam, vitae excepturi magni labore quaerat qui quia adipisci odio sint aut officia assumenda consequatur molestiae! Optio quia voluptatem eveniet maxime! </p>
+      </article>
+
+    </div>
 
   </main>
-  
+
   <!--Footer-->
   <div class="footer">
     <footer class="bg text-center text-lg-start">
       <div>
         <ul>
-          <li>
-            <a href="https://github.com/amadeual" target="_blank">
+          <li class="list">
+            <a class="myA" href="https://github.com/amadeual" target="_blank">
               Amadeu Alexandre Filipe
             </a>
           </li>
-          <li>
-            <a href="https://github.com/FernandoAgostini28" target="_blank">
+          <li class="list">
+            <a class="myA" href="https://github.com/FernandoAgostini28" target="_blank">
               Fernando Agostini
             </a>
           </li>
-          <li>
-            <a href="#" target="_blank">
+          <li class="list">
+            <a class="myA" href="#" target="_blank">
               Gabriela de Oliveira Gentile
             </a>
           </li>
-          <li>
-            <a href="https://github.com/nogueiraravel" target="_blank">
+          <li class="list">
+            <a class="myA" href="https://github.com/nogueiraravel" target="_blank">
               Ravel dos Santos Nogueira
             </a>
           </li>
-          <li>
-            <a href="https://github.com/YaraProenca" target="_blank">
+          <li class="list">
+            <a class="myA" href="https://github.com/YaraProenca" target="_blank">
               Yara Proença Carvalho de Oliveira
             </a>
           </li>
         </ul>
 
         <div class="text-center p-3">
-          <p class="footcopy">Projeto realizado para fins educativos © 2021 Copyright:</p>
-          <a class="text-white" href="https://www.resilia.com.br/" target="_blank">Resilia Educação</a>
+          <p class="footcopy">
+            Projeto realizado para fins educativos
+          </p>
+          <a id="resiliaA" class="myA text-white txtNavBar" href="https://www.resilia.com.br/" target="_blank">
+            Resilia Educação
+          </a>
         </div>
       </div>
     </footer>
