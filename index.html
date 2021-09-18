@@ -2,233 +2,290 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!--Font-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-  <!--Style-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/media/stylemedia.css">
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <!--Style-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media/stylemedia.css">
 
-  <!--Script-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous" defer></script>
-  <script src="./Script/apis.js"></script>
-  <!--Icon-->
-  <link rel="shortcut icon" href="./assets/img/headIcon.png" type="image/x-icon">
-  <title>ResiliaFlix | Home</title>
+    <!--Script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <script src="./Script/apis.js"></script>
+    <!--Icon-->
+    <link rel="shortcut icon" href="./assets/img/headIcon.png" type="image/x-icon">
+    <title>ResiliaFlix | Home</title>
 </head>
 
 <body>
-  <!--Navegation-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg">
-    <div class=" navFont container-fluid">
-      <img class="logoIcon" src="./assets/img/testeIcon.png" alt="">
-      <a class="navbar-brand logoTxt" href="index.html">ResiliaFlix</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active txtNavBar" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link txtNavBar" href="./html/contacts.html">Contato</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle txtNavBar" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Login
-            </a>
-            <ul class="dropdown-menu txtNavBar" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item txtNavBar" href="./html/login.html">Faça seu login</a></li>
-              <li><a class="dropdown-item txtNavBar" href="./html/registrationForm.html">Ainda não é inscrito?</a></li>
-              <li>
-                <hr class="dropdown-divider txtNavBar">
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link txtNavBar" href="./html/movieSearch.html">Filmes</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="myInput form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button id="movieSearch" class="myBtn btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
+    <!--Navegation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg">
+        <div class=" navFont container-fluid">
+            <img class="logoIcon" src="./assets/img/testeIcon.png" alt="">
+            <a class="navbar-brand logoTxt" href="index.html">ResiliaFlix</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active txtNavBar" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link txtNavBar" href="./html/contacts.html">Contato</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle txtNavBar" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Login
+                        </a>
+                        <ul class="dropdown-menu txtNavBar" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item txtNavBar" href="./html/login.html">Faça seu login</a></li>
+                            <li><a class="dropdown-item txtNavBar" href="./html/registrationForm.html">Ainda não é inscrito?</a></li>
+                            <li>
+                                <hr class="dropdown-divider txtNavBar">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link txtNavBar" href="./html/movieSearch.html">Filmes</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="myInput form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button id="movieSearch" class="myBtn btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!--Carousel-->
+    <main>
+        <div id="carouselExampleCaptions" class="carousel slide myCarousel" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11" aria-label="Slide 12"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="" target="_blank">
+                        <img id="img1" src="./assets/img/teste1.png" class="d-block w-100 carouselImg">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block h-50">
+                        <h2 class="display-3">Assista de onde quiser!</h2>
+                        <p class="display-6">Oferecemos o melhor serviço de stream do país.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="" target="_blank">
+                        <img id="img2" src="./assets/img/teste2.jpg" class="d-block w-100 carouselImg">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block h-50 d-inline-block">
+                        <h2 class="display-3">Increva-se agora e garanta o primeiro mês totalmente grátis!</h2>
+                        <p class="display-6">Oferecemos o melhor serviço de stream do país.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="" target="_blank">
+                        <img id="img3" src="./assets/img/teste1.png" class="d-block w-100 carouselImg">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="" target="_blank">
+                        <img id="img4" src="./assets/img/teste1.png" class="d-block w-100 carouselImg">
+                    </a>
+
+                </div>
+                <div class="carousel-item">
+                    <a href="" target="_blank">
+                        <img id="img5" src="./assets/img/teste1.png" class="d-block w-100 carouselImg">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="" target="_blank">
+                        <img id="img6" src="./assets/img/teste1.png" class="d-block w-100 carouselImg">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="" target="_blank">
+                        <img id="img7" src="./assets/img/teste1.png" class="d-block w-100 carouselImg">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="" target="_blank">
+                        <img id="img8" src="./assets/img/teste1.png" class="d-block w-100 carouselImg">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="" target="_blank">
+                        <img id="img9" src="./assets/img/teste1.png" class="d-block w-100 carouselImg">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="" target="_blank">
+                        <img id="img10" src="./assets/img/teste1.png" class="d-block w-100 carouselImg">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="" target="_blank">
+                        <img id="img11" src="./assets/img/teste1.png" class="d-block w-100 carouselImg">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="" target="_blank">
+                        <img id="img12" src="./assets/img/teste1.png" class="d-block w-100 carouselImg">
+                    </a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
+
+    <!--section''-->
+    <section class="section">
+        <div class="container">
+            <div class="grid">
+                <div>
+                    <h1>
+                        Desfrute na sua TV.
+                    </h1>
+                    <p>
+                        Assista em Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players e muito mais.
+                    </p>
+                </div>
+                <div class="imgTv">
+                    <img src="./assets/img/tv - Copy.png" alt="">
+
+                    <video class="videoHome" autoplay palysinline muted loop>
+                        <source src="./assets/img/movieDark (1) (1).mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="grid2">
+                <div class="imgTv">
+                    <img src="./assets/img/cellD.png" alt="">
+                    <div class="imgUpAnimation">
+                        <div class="cardDivAnimation">
+                            <img src="./assets/img/poster.png" alt="Poster série Dark">
+                        </div>
+                        <div class="divTxtImg">
+                            <div class="divAnimationTxt">
+                                DARK
+                            </div>
+                            <div class="divAnimationTxt2">
+                                Donloading...
+                            </div>
+                        </div>
+                        <div class="gif"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>
+                        Baixe seus programas para assistir offline.
+                    </h2>
+                    <p>
+                        Salve seus favoritos com facilidade e tenha sempre algo para assistir.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section3">
+        <div class="container">
+            <div class="grid">
+                <div>
+                    <h3>
+                        Assista em todos os lugares.
+                    </h3>
+                    <p>
+                        Transmita filmes e programas de TV ilimitados em seu telefone, tablet, laptop e TV sem pagar mais.
+                    </p>
+                </div>
+                <div class="imgTv">
+                    <img src="./assets/img/device-pile.png" alt="">
+
+                    <video class="videoHome2" autoplay palysinline muted loop>
+                        <source src="./assets/img/darkM 2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <div class="footer">
+        <footer class="bg text-center text-lg-start">
+            <div>
+                <ul>
+                    <li class="list">
+                        <a class="myA" href="https://github.com/amadeual" target="_blank">
+                            Amadeu Alexandre Filipe
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a class="myA" href="https://github.com/FernandoAgostini28" target="_blank">
+                            Fernando Agostini
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a class="myA" href="#" target="_blank">
+                            Gabriela de Oliveira Gentile
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a class="myA" href="https://github.com/nogueiraravel" target="_blank">
+                            Ravel dos Santos Nogueira
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a class="myA" href="https://github.com/YaraProenca" target="_blank">
+                            Yara Proença Carvalho de Oliveira
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="text-center p-3">
+                    <p class="footcopy">
+                        Projeto realizado para fins educativos
+                    </p>
+                    <a id="resiliaA" class="myA text-white txtNavBar" href="https://www.resilia.com.br/" target="_blank">
+                        Resilia Educação
+                    </a>
+                </div>
+            </div>
+        </footer>
     </div>
-  </nav>
-
-  <!--Carousel-->
-  <main>
-    <div id="carouselExampleCaptions" class="carousel slide myCarousel" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10" aria-label="Slide 11"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11" aria-label="Slide 12"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <a href="" target="_blank">
-            <img id="img1" src="./assets/img/teste1.png" class="d-block w-100 carouselImg">
-          </a>
-          <div class="carousel-caption d-none d-md-block h-50">
-            <h2 class="display-3">Assista de onde quiser!</h2>
-            <p class="display-6">Oferecemos o melhor serviço de stream do país.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <a href="" target="_blank">
-            <img id="img2" src="./assets/img/teste2.jpg" class="d-block w-100 carouselImg">
-          </a>
-          <div class="carousel-caption d-none d-md-block h-50 d-inline-block">
-            <h2 class="display-3">Increva-se agora e garanta o primeiro mês totalmente grátis!</h2>
-            <p class="display-6">Oferecemos o melhor serviço de stream do país.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <a href="" target="_blank">
-            <img id="img3" src="./assets/img/teste1.png" class="d-block w-100 carouselImg">
-          </a>
-        </div>
-        <div class="carousel-item">
-          <a href="" target="_blank">
-            <img id="img4" src="./assets/img/teste1.png" class="d-block w-100 carouselImg">
-          </a>
-
-        </div>
-        <div class="carousel-item">
-          <a href="" target="_blank">
-            <img id="img5" src="./assets/img/teste1.png" class="d-block w-100 carouselImg">
-          </a>
-        </div>
-        <div class="carousel-item">
-          <a href="" target="_blank">
-            <img id="img6" src="./assets/img/teste1.png" class="d-block w-100 carouselImg">
-          </a>
-        </div>
-        <div class="carousel-item">
-          <a href="" target="_blank">
-            <img id="img7" src="./assets/img/teste1.png" class="d-block w-100 carouselImg">
-          </a>
-        </div>
-        <div class="carousel-item">
-          <a href="" target="_blank">
-            <img id="img8" src="./assets/img/teste1.png" class="d-block w-100 carouselImg">
-          </a>
-        </div>
-        <div class="carousel-item">
-          <a href="" target="_blank">
-            <img id="img9" src="./assets/img/teste1.png" class="d-block w-100 carouselImg">
-          </a>
-        </div>
-        <div class="carousel-item">
-          <a href="" target="_blank">
-            <img id="img10" src="./assets/img/teste1.png" class="d-block w-100 carouselImg">
-          </a>
-        </div>
-        <div class="carousel-item">
-          <a href="" target="_blank">
-            <img id="img11" src="./assets/img/teste1.png" class="d-block w-100 carouselImg">
-          </a>
-        </div>
-        <div class="carousel-item">
-          <a href="" target="_blank">
-            <img id="img12" src="./assets/img/teste1.png" class="d-block w-100 carouselImg">
-          </a>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </main>
-
-  <!--section''-->
-  <section>
-    <div class="imgBehind">
-       <img class="myImg" src="./assets/img/Rectangle 1.png" alt="">
-    </div>
-  </section>
-
-  <section>
-    <div class="imgBehind">
-       <img class="myImg" src="./assets/img/Rectangle 1.png" alt="">
-    </div>
-  </section>
-
-  <section>
-    <div class="imgBehind">
-       <img class="myImg" src="./assets/img/Rectangle 1.png" alt="">
-    </div>
-  </section>
-
-
-
-  <!--Footer-->
-  <div class="footer">
-    <footer class="bg text-center text-lg-start">
-      <div>
-        <ul>
-          <li class="list">
-            <a class="myA" href="https://github.com/amadeual" target="_blank">
-              Amadeu Alexandre Filipe
-            </a>
-          </li>
-          <li class="list">
-            <a class="myA" href="https://github.com/FernandoAgostini28" target="_blank">
-              Fernando Agostini
-            </a>
-          </li>
-          <li class="list">
-            <a class="myA" href="#" target="_blank">
-              Gabriela de Oliveira Gentile
-            </a>
-          </li>
-          <li class="list">
-            <a class="myA" href="https://github.com/nogueiraravel" target="_blank">
-              Ravel dos Santos Nogueira
-            </a>
-          </li>
-          <li class="list">
-            <a class="myA" href="https://github.com/YaraProenca" target="_blank">
-              Yara Proença Carvalho de Oliveira
-            </a>
-          </li>
-        </ul>
-
-        <div class="text-center p-3">
-          <p class="footcopy">
-            Projeto realizado para fins educativos
-          </p>
-          <a id="resiliaA" class="myA text-white txtNavBar" href="https://www.resilia.com.br/" target="_blank">
-            Resilia Educação
-          </a>
-        </div>
-      </div>
-    </footer>
-  </div>
 </body>
 
 </html>
