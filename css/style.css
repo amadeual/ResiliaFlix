@@ -97,13 +97,22 @@ li {
   content: "🦉";
 }
 
-a {
+.myA {
   text-decoration: none;
   color: #8c8c8c;
 }
 
-a:hover {
+.myA:hover {
   color: orangered;
+}
+
+#resiliaA{
+  color: aliceblue !important;
+  font-weight: bold;
+}
+
+#resiliaA:hover{
+  color: #ffd000 !important;
 }
 
 .footer {
