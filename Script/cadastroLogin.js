@@ -35,7 +35,7 @@ class CadastroLogin {
 
 //============ api de cep =========================================
 
-function retornaCep(cep) {
+/*function retornaCep(cep) {
 
     if (cep) {
         document.getElementById('estadoTxt').value = "PR";
@@ -53,7 +53,7 @@ if (cep) {
         console.log(cepNumber)
         retornaCep(cepNumber)
     })
-}
+}*/
 
 const btnsalvar = document.getElementById('button')
 if (btnsalvar) {
