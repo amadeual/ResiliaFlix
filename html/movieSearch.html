@@ -21,7 +21,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
-    <script src="../Script/apis.js"></script>
+    <script src="../Script/pesquisa.js" defer></script>
   <!--Icon-->
   <link rel="shortcut icon" href="../assets/img/headIcon.png" type="image/x-icon">
   <title>ResiliaFlix | Busca de Filmes</title>
@@ -77,34 +77,16 @@
       </div>
 
       <form class="boxForm">
-        <input type="text" placeholder="Digite o nome do filme" name="" id="movieSearch">
-        <div class="button" id="btn"><a href="../html/movieResults.html"><img src="../assets/img/searchIcon (1).png"></a></div>
+        <input type="text" placeholder="Digite o nome do filme" name="" id="movieSearch5">
+        <div class="button" id="btn"><!--<a href="../html/movieResults.html"><img src="../assets/img/searchIcon (1).png"></a>--></div>
       </form>
     </div>
   </main>
 
   <!--AQUI VAI AS DIVS DOS RESULTADOS DOS FILMES FICARÃO COMO DISPLAY NONE-->
-  <section class="movieRes">
-    <div class="boxMovies">
-      <div class="moviesPic">
-        <img id="movieRes" src="../assets/img/teste2.png"> 
-        <!-- ================ editar=============== passar filme por URL-->
-        <a href="../html/movieResults.html?name=Argentina">    
-        <h3>Harry Potter e o Prisioneiro de askaban</h3>
-      </a> 
-      </div>
-      <!-- <div class="moviesPic"><img id="movie2" src="../assets/img/Tyler on Twitter.png"></div>
-      <div class="moviesPic"><img id="movie3" src="../assets/img/teste2.png"></div>
-      <div class="moviesPic"><img id="movie4" src="../assets/img/Tyler on Twitter.png"></div>
-      <div class="moviesPic"><img id="movie5" src="../assets/img/teste2.png"></div>
-      <div class="moviesPic"><img id="movie6" src="../assets/img/Tyler on Twitter.png"></div>
-      <div class="moviesPic"><img id="movie7" src="../assets/img/teste2.png"></div>
-      <div class="moviesPic"><img id="movie8" src="../assets/img/Tyler on Twitter.png"></div>
-      <div class="moviesPic"><img id="movie9" src="../assets/img/teste2.png"></div>
-      <div class="moviesPic"><img id="movie10" src="../assets/img/Tyler on Twitter.png"></div>
-      <div class="moviesPic"><img id="movie11" src="../assets/img/teste2.png"></div>
-      <div class="moviesPic"><img id="movie12" src="../assets/img/Tyler on Twitter.png"></div> -->
-    </div>
+  <section class="movieRes" id="cardFilm">
+  
+    
   </section>
 
   <!--Footer-->
