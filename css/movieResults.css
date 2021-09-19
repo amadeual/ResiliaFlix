@@ -127,6 +127,7 @@ li {
 
 .list::before {
   content: "🦉";
+ 
 }
 
 .myA {
@@ -153,4 +154,86 @@ li {
 
 .footcopy {
   color: white;
+}
+ /*==================================================editar */
+
+ main{
+  width: min(80vw, 960px); 
+  margin: auto;
+}
+
+.detalhes{
+  color:#faec7f;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 40px;
+  gap: 10px;  
+}
+
+
+section img{
+  width: 100%;
+}
+.detalhes-info{
+  color:#faec7f;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  line-height: 1rem;
+  
+
+}
+@media (max-width: 800px) {
+  .detalhes{        
+      grid-template-columns: repeat(1, 1fr);
+        
+  }
+
+  section img{
+      width: 100%;
+     
+  }
+}
+
+.detalhes-footer{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+@media (max-width: 600px) {
+  .detalhes{        
+      grid-template-columns: repeat(1, 1fr);
+        
+  }
+
+  .detalhes-info{
+      
+      grid-template-columns: repeat(1, 1fr); 
+      margin-bottom: 0;   
+  
+  }
+
+  section img{
+      width: 100%;
+     
+  }
+}
+
+@media (max-width: 600px) {
+  .detalhes-footer{
+     flex-wrap: wrap;
+     
+      
+  }
+
+  .detalhes-footer button{
+      margin-bottom: 5px;
+      display: block;
+      width: 100%;
+  }
+  
 }
