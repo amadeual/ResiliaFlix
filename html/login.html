@@ -16,11 +16,16 @@
   <link rel="stylesheet" href="../css/login.css">
   <link rel="stylesheet" href="../css/media/loginMedia.css">
   <link rel="stylesheet" href="../css/global.css">
+
+  
+  <script src="../Script/cadastroLogin.js" defer></script>
+   
+
   <!--Script-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
-    <script src="./Script/apis.js"></script>
+    <script src="../Script/apis.js"></script>
   <!--Icon-->
   <link rel="shortcut icon" href="../assets/img/headIcon.png" type="image/x-icon">
   <title>ResiliaFlix | Login</title>
@@ -42,10 +47,10 @@
   <div>
     <form class="login" method="post">
       <h1>Login</h1>
-      <input type="text" name="" placeholder="Digite o seu usuário">
-      <input type="password" name="" placeholder="Digite a sua senha">
+      <input id='loginUser' type="text" name="" placeholder="Digite o seu usuário" value="">
+      <input id='loginSenha'  type="password" name="" placeholder="Digite a sua senha" value="">
       <a href="../index.html">
-        <input type="submit" name="" value="Login">
+        <input id='login' type="submit" name="" value="Login" >
       </a>
       <p class="login-senha"><a class="aLogin" href="./passwordRecovery.html">Esqueci a minha senha</a></p>
       <p class="login-senha">Não possui login? Faça seu cadastro <a class="aLogin" href="./registrationForm.html">AQUI!</a></p>
