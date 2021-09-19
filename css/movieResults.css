@@ -85,7 +85,17 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: center; 
+  justify-content: center;
+  position: relative; 
+}
+
+.imgMovieRes{
+  position: absolute;
+  left: 10%;
+  width: 70%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 35px;
 }
 
 .movieInfo {
