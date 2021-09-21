@@ -5,22 +5,26 @@ $("#btn").on("click", function () {
     const detalheFilme = document.querySelector('#cardFilm')
     console.log(detalheFilme)
 
-    $.ajax({
-        url: url,
-        type: "get",
-        dataType: "json",
+    try {
+        $.ajax({
+            url: url,
+            type: "get",
+            dataType: "json",
 
 
-        success(resposta) {
-            console.log(resposta)
-            detalheCard(resposta)
-        }
+            success(resposta) {
+                console.log(resposta)
+                detalheCard(resposta)
+            }
 
-    })
+        })
+    } catch (err) {
+        alert('error')
+    }
 
     const detalheCard = resposta => {
         let detalheFilmePrincipal = ""
-        
+
         detalheFilmePrincipal += `<div class="boxMovies">
             <div class="moviesPic">
                 <img id="movieRes" src="${resposta.Poster}">                

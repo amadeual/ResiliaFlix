@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-const detalheApi = async (url) => {
+const detalheApi = (url) => {
   /*const res = await fetch(`https://restcountries.eu/rest/v2/name/${nome}`)*/
   /*
   const res = await fetch('https://restcountries.eu/rest/v2/all')
@@ -22,35 +22,37 @@ const detalheApi = async (url) => {
   detalheCard(apiFiltrada)
   console.log(apiFiltrada)
 */
+  try {
+    $.ajax({
+      url: url,
+      type: "get",
+      dataType: "json",
 
-  await $.ajax({
-    url: url,
-    type: "get",
-    dataType: "json",
 
-
-    success(resposta) {
-      detalheCard(resposta)
-    }
-  })
-
+      success(resposta) {
+        detalheCard(resposta)
+      }
+    })
+  } catch (err) {
+    alert('error')
+  }
 
 
 }
 
 const detalheCard = resposta => {
   let detalheFilmePrincipal = ""
-    detalheFilmePrincipal += `
+  detalheFilmePrincipal += `
         <div class="divBox">
         <div class="imgDiv">
           <img class="imgMovieRes" src="${resposta.Poster}">
         </div>
         <article class="movieInfo">
           <h2>${resposta.Title}</h2>
-          <p>${resposta.Plot}</p>
-          <p>${resposta.Actors}</p>
-          <p>${resposta.Year}</p>
+          <p class="p1">${resposta.Plot}</p>
+          <p class="p2">${resposta.Actors}</p>
+          <p class="p2">${resposta.Year}</p>
         </article>
       </div>`
-      detalheFilme.innerHTML = detalheFilmePrincipal
-  }
+  detalheFilme.innerHTML = detalheFilmePrincipal
+}

@@ -1,272 +1,270 @@
 body {
-    background: #0f0c29;
-    background: -webkit-linear-gradient(to right, #16161f, #111014, #000000);
-    background: linear-gradient(to right, #16161f, #111014, #000000);
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #16161f, #111014, #000000);
+  background: linear-gradient(to right, #16161f, #111014, #000000);
 }
 
 .logoTxt {
-    font-size: 2rem;
-    color: #ffd000 !important;
+  font-size: 2rem;
+  color: #ffd000 !important;
 }
 
 .logoTxt:hover {
-    transform: scale(1.1);
-    transition: ease-in-out;
-    transition-delay: 8ms;
-    color: #8c8c8c !important;
+  transform: scale(1.1);
+  transition: 0.6s;
+  transition-delay: 8ms;
+  color: #8c8c8c !important;
 }
 
 .logoIcon {
-    width: 40px;
-    margin: 5px;
+  width: 40px;
+  margin: 5px;
 }
 
 .navFont {
-    font-family: "Fjalla One", sans-serif;
-    font-size: 25px;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 25px;
 }
 
 .txtNavBar {
-    color: #8c8c8c !important;
+  color: #8c8c8c !important;
 }
 
 .txtNavBar:hover {
-    color: #ffd000 !important;
+  color: #ffd000 !important;
 }
 
 .myBtn {
-    border-color: #ffd000;
-    color: #ffd000;
-    border-radius: 10px;
+  border-color: #ffd000;
+  color: #ffd000;
+  border-radius: 10px;
 }
 
 .myBtn:hover {
-    background-color: #ffd000;
-    border-color: #b1b1b1;
+  background-color: #ffd000;
+  border-color: #b1b1b1;
+}
+.aRes{
+    text-decoration: none;
+    color: #ffd000;
+}
+
+.aRes:hover{
     color: #111014;
 }
 
-.myInput {
-    border: 0;
-    outline: none;
-    display: block;
-    border-radius: 5px;
-    color: #b1b1b1;
-    background-color: #111014;
-}
-
 .carouselImg {
-    object-fit: cover;
-    height: 600px;
+  object-fit: cover;
+  height: 600px;
 }
 
 .bg {
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1rem;
 }
 
 img {
-    display: block;
+  display: block;
 }
 
 .section {
-    border-top: 8px solid #111014;
-    background-color: #000000;
-    padding: 4rem 0;
-    color: antiquewhite;
-    text-align: center;
+  border-top: 8px solid #111014;
+  background-color: #000000;
+  padding: 4rem 0;
+  color: antiquewhite;
+  text-align: center;
 }
 
 .section3 {
-    border-top: 8px solid #111014;
-    border-bottom: 8px solid #111014;
-    background-color: #000000;
-    padding: 4rem 0;
-    color: antiquewhite;
-    text-align: center;
+  border-top: 8px solid #111014;
+  border-bottom: 8px solid #111014;
+  background-color: #000000;
+  padding: 4rem 0;
+  color: antiquewhite;
+  text-align: center;
 }
 
 .section h1,
 h2,
 h3 {
-    font-size: 50px;
-    margin-bottom: 2%;
+  font-size: 50px;
+  margin-bottom: 2%;
 }
 
 .section p {
-    font-size: 26px;
+  font-size: 26px;
 }
 
 .container {
-    max-width: 1130px;
-    margin: 0 auto;
+  max-width: 1130px;
+  margin: 0 auto;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
 }
 
 .grid2 {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
 }
 
 .imgTv {
-    position: relative;
+  position: relative;
 }
 
 .imgTv img {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .videoHome {
-    position: absolute;
-    top: 20%;
-    left: 13%;
+  position: absolute;
+  top: 20%;
+  left: 13%;
 }
 
 .videoHome2 {
-    width: 420px;
-    position: absolute;
-    top: 10%;
-    right: 18%;
+  width: 420px;
+  position: absolute;
+  top: 10%;
+  right: 18%;
 }
 
-.imgUpAnimation  .gif::after {
-    width: 3em;
-    height: 3em;
-    outline: 2px solid #000;
-    outline-offset: -2px;
-    display: block;
-    background: url(../assets/img/download-icon.gif) center center no-repeat;
-    -moz-background-size: 100%;
-    background-size: 100%;
-    content: '';
-    -webkit-box-flex: 0;
-    -moz-box-flex: 0;
-    -ms-flex-positive: 0;
-    flex-grow: 0;
-    -webkit-flex-shrink: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    margin: 0 50%;
+.imgUpAnimation .gif::after {
+  width: 3em;
+  height: 3em;
+  outline: 2px solid #000;
+  outline-offset: -2px;
+  display: block;
+  background: url(../assets/img/download-icon.gif) center center no-repeat;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  content: "";
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin: 0 50%;
 }
 
 .imgUpAnimation {
-    position: absolute;
-    z-index: 1;
-    left: 40%;
-    bottom: 8%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-    margin: 0 auto;
-    background: #000;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -moz-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    width: 100%;
-    min-width: 15em;
-    padding: .25em .65em;
-    border: 2px solid rgba(255, 255, 255, .25);
-    -webkit-box-shadow: 0 0 2em 0 #000;
-    -moz-box-shadow: 0 0 2em 0 #000;
-    box-shadow: 0 0 2em 0 #000;
-    -webkit-border-radius: .75em;
-    -moz-border-radius: .75em;
-    border-radius: .75em;
+  position: absolute;
+  z-index: 1;
+  left: 40%;
+  bottom: 8%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin: 0 auto;
+  background: #000;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  min-width: 15em;
+  padding: 0.25em 0.65em;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: 0 0 2em 0 #000;
+  -moz-box-shadow: 0 0 2em 0 #000;
+  box-shadow: 0 0 2em 0 #000;
+  -webkit-border-radius: 0.75em;
+  -moz-border-radius: 0.75em;
+  border-radius: 0.75em;
 }
 
-.divTxtImg{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.divTxtImg {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .cardDivAnimation {
-    margin: 0 1em 0 0;
-    -webkit-box-flex: 0;
-    -webkit-flex-grow: 0;
-    -moz-box-flex: 0;
-    -ms-flex-positive: 0;
-    flex-grow: 0;
-    -webkit-flex-shrink: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
+  margin: 0 1em 0 0;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -moz-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .imgUpAnimation .cardDivAnimation .divAnimationTxt {
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -moz-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    -webkit-flex-shrink: 1;
-    -ms-flex-negative: 1;
-    flex-shrink: 1;
-    margin: .3em 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -moz-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  margin: 0.3em 0;
 }
 
 .divAnimationTxt2 {
-    color: #0071eb;
-    font-size: .90em;
-    margin-top: 5px;
-    font-weight: 400;
+  color: #0071eb;
+  font-size: 0.9em;
+  margin-top: 5px;
+  font-weight: 400;
 }
 
 ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    padding-left: 1rem;
-    text-indent: -0.7rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 1rem;
+  text-indent: -0.7rem;
 }
 
 .list::before {
-    content: "🦉";
+  content: "🦉";
 }
 
 .myA {
-    text-decoration: none;
-    color: #8c8c8c;
+  text-decoration: none;
+  color: #8c8c8c;
 }
 
 .myA:hover {
-    color: orangered;
+  color: orangered;
 }
 
 #resiliaA {
-    color: aliceblue !important;
-    font-weight: bold;
+  color: aliceblue !important;
+  font-weight: bold;
 }
 
 #resiliaA:hover {
-    color: #ffd000 !important;
+  color: #ffd000 !important;
 }
 
 .footer {
-    grid-area: footer;
+  grid-area: footer;
 }
 
 .footcopy {
-    color: white;
+  color: white;
 }
