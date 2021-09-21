@@ -125,6 +125,7 @@ input {
   margin: 2px;
   border: #111014;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .button:hover{
@@ -156,15 +157,23 @@ section.movieRes {
   cursor: pointer;
 }
 
-img {
+#movieRes{
   width: 100%;
   height: 75%;
   border-radius: 50px;
   object-fit: cover;
 }
+
 h3{
+  margin-top: 3%;
   text-align: center;
+  font-size: 1.5rem;
 }
+
+h3:hover{
+  color: #111014;
+}
+
 .moviesPic:hover{
   transform: scale(1.1);
 }
