@@ -19,40 +19,43 @@ body {
   padding: 5px 0 0 0;
 }
 
-.h1Logo>a {
+.h1Logo > a {
   color: #ffd000;
   font-size: 3rem;
   padding: 5px 0;
 }
 
-.h1Logo>a:hover{
+.h1Logo > a:hover {
   color: #b1b1b1;
   transition: 0.25s;
 }
 
-.login {
-  object-fit: cover;
-  height: 450px;
-  background-color: #ffd000;
+.boxLogin {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  grid-auto-columns: auto;
+}
+
+.innerBox {
+  display: grid;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 1em #faec7f, 0 0 1em #ffd000;
+  border-radius: 35px;
+  width: 30%;
+  justify-items: center;
 }
 
 .login {
-  width: 500px;
-  padding: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0 0 1em #faec7f, 0 0 1em #ffd000;
   text-align: center;
-  border-radius: 24px;
 }
 
 .login h1 {
   color: #b1b1b1;
   text-transform: uppercase;
   font-weight: 500;
+  margin-top: 1rem;
 }
 
 .login input[type="text"],
@@ -77,23 +80,21 @@ body {
   border-color: #ffd000;
 }
 
-.login input[type="submit"] {
-  border: 0;
-  background: none;
-  display: block;
-  margin: 20px auto;
-  text-align: center;
-  border: 2px solid #ffd000;
-  padding: 14px 40px;
-  outline: none;
-  color: #b1b1b1;
+#loginUserBtn {
+  padding: 10px 30px 10px 30px;
+  color: #ffd000;
+  margin: 0.9rem;
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 24px;
-  transition: 0.25s;
-  cursor: pointer;
+  border-color: #ffd000;
 }
 
-.login input[type="submit"]:hover {
+#loginUserBtn:hover {
+  color: #16161f;
   background: #ffd000;
+  transform: scale(1.1);
+  transition: 0.6s;
+  transition-delay: 8ms;
 }
 
 .login-senha {

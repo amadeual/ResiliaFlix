@@ -1,27 +1,68 @@
-@media (max-width: 979px) {
+@media (max-width: 1024px) {
   body {
-    display: grid;
-    grid-template-areas:
-      "nav"
-      "main"
-      "footer";
-    grid-template-columns: auto;
-    grid-template-rows: 18% 78vh auto;
+    grid-template-rows: 8% 100vh auto;
   }
-  .footlogin {
-    grid-area: footer;
+  .innerBox {
+    width: 80%;
+    height: 38rem;
+    justify-items: center;
+  }
+
+  .login h1 {
+    font-size: 5em;
+  }
+
+  .login input[type="text"],
+  .login input[type="password"] {
+    width: 400px;
+    font-size: 3em;
+  }
+
+  #login {
+    padding: 15px 35px 15px 35px;
+    border-radius: 34px;
+    font-size: 2em;
+  }
+
+  .login-senha {
+    font-size: 2em;
   }
 }
 
-@media(min-width: 200px){
-  body {
+@media (max-width: 700px) {
+  .innerBox {
+    /* width: 40%; */
+    height: 25rem;
+    justify-items: center;
     display: grid;
-    grid-template-areas:
-      "nav"
-      "main"
-      "footer";
-    grid-template-columns: auto;
-    grid-template-rows: 10% 85vh auto;
+
+    width: 100%;
+    justify-items: center;
+  }
+  .boxLogin {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-auto-columns: auto;
   }
 
+  .login h1 {
+    font-size: 2em;
+  }
+
+  .login input[type="text"],
+  .login input[type="password"] {
+    width: 200px;
+    font-size: 1em;
+  }
+
+  #login {
+    padding: 15px 35px 15px 35px;
+    border-radius: 34px;
+    font-size: 1em;
+  }
+
+  .login-senha {
+    font-size: 1em;
+  }
 }

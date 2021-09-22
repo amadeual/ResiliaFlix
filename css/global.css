@@ -1,37 +1,26 @@
 /* Estilização da cor de fundo, body geral */
 body {
   display: grid;
-  background: #0f0c29; 
-  background: -webkit-linear-gradient(
-    to right,
-    #16161f,
-    #111014,
-    #000000
-  );
-  background: linear-gradient(
-    to right,
-    #16161f,
-    #111014,
-    #000000
-  ); 
-  font-family: 'Fjalla One', sans-serif;
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #1d1d24, #111014, #000000);
+  background: linear-gradient(to right, #16161f, #111014, #000000);
+  font-family: "Fjalla One", sans-serif;
 }
 
 /* Estilização do footer */
 
-.bg{
-  background-color: rgba(0,0,0,0.2);
+.bg {
+  background-color: rgba(0, 0, 0, 0.2);
   padding: 1rem;
 }
 
-ul{
-  
+ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-li{
+li {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -39,21 +28,20 @@ li{
   text-indent: -0.7rem;
 }
 
-li::before{
-
+li::before {
   content: "🦉";
 }
 
-a{
+a {
   text-decoration: none;
-  color: #8C8C8C;
+  color: #8c8c8c;
 }
 
-a:hover{
+a:hover {
   color: orangered;
 }
 
-#resiliaA:hover{
+#resiliaA:hover {
   color: #ffd000 !important;
 }
 .footer {
