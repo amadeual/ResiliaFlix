@@ -26,6 +26,11 @@ body {
   font-size: 25px;
 }
 
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .txtNavBar {
   color: #8c8c8c !important;
 }
@@ -44,18 +49,17 @@ body {
   background-color: #ffd000;
   border-color: #b1b1b1;
 }
-.aRes{
-    text-decoration: none;
-    color: #ffd000;
+.aRes {
+  text-decoration: none;
+  color: #ffd000;
 }
 
-.aRes:hover{
-    color: #111014;
+.aRes:hover {
+  color: #111014;
 }
 
 .carouselImg {
-  object-fit: cover;
-  height: 600px;
+  height: 800px;
 }
 
 .bg {
@@ -87,12 +91,20 @@ img {
 .section h1,
 h2,
 h3 {
-  font-size: 50px;
+  font-size: 2.5rem;
   margin-bottom: 2%;
 }
 
 .section p {
-  font-size: 26px;
+  font-size: 1.5rem;
+}
+
+.h3Section{
+  font-size: 2.5rem
+}
+
+.p3Section{
+  font-size: 1.5rem;
 }
 
 .container {

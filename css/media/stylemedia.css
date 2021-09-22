@@ -1,8 +1,77 @@
-@media (min-width: 2000px) {
+@media (max-width: 770px) {
   .carouselImg {
     object-position: 0 20%;
-    height: 900px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: auto auto;
+    justify-items: center;
+  }
+
+  .grid2 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: auto auto;
+    justify-items: center;
+  }
+
+  .imgTv img {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    width: 300px;
+  }
+  .darkImgPoster{
+    width: 10rem;
+  }
+
+  .videoHome2 {
+    width: 189px;
+  }
+
+  .videoHome {
+    width: 221px;
+  }
+
+  .section h1,
+  h2,
+  h3 {
+    font-size: 2.5rem;
+    margin-bottom: 3%;
+  }
+
+  .section p {
+    font-size: 1.5rem;
+  }
+  .divTxtImg{
+    margin-left: 2rem;
+  }
+
+  .imgUpAnimation {
+    left: 50%;
+    width: 21rem;
+    height: 7rem;
+    bottom: 8%;
+  }
+
+  .divAnimationTxt {
+    font-size: 0.9em;
+  }
+
+  .divAnimationTxt2 {
+    font-size: 0.7em;
+  }
+
+  .imgUpAnimation .gif::after {
+    margin: 0;
   }
 }
-
-

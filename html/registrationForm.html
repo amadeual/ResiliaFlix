@@ -27,6 +27,17 @@
 </head>
 
 <body>
+  <header>
+    <div class="logo1">
+      <img class="imgLogo1" src="../assets/img/testeIcon.png" alt="">
+      <h1 class="h1Logo1">
+        <a href="../index.html">
+          ResiliaFlix
+        </a>
+      </h1>
+    </div>
+  </header>
+
   <!--Form de Registro-->
   <main>
     <div class="row mb-5 justify-content-center box">
@@ -48,11 +59,11 @@
             <div class="form-row first">
               <div class="form-group col-sm-6">
                 <label for="nameTxt">Nome</label>
-                <input type="text" placeholder="Digite seu nome completo" class="form-control" id="nameTxt" minlength="4" required>
+                <input type="text" placeholder="Digite seu nome completo" class="form-control" id="nameTxt">
               </div>
               <div class="form-group col-sm-3">
                 <label for="rgNumber">RG</label>
-                <input type="text" placeholder="Digite seu RG" name="RG" class="form-control" id="rgNumber" required>
+                <input type="text" placeholder="Digite seu RG" name="RG" class="form-control" id="rgNumber">
               </div>
             </div>
 
@@ -63,27 +74,27 @@
               </div>
               <div class="form-group col-sm-2">
                 <label for="senhaNumber">Digite uma Senha</label>
-                <input type="password" placeholder="Senha" class="form-control" id="senhaNumber" pattern=".{6,}" title="Six or more characters" autocomplete="off" required>
+                <input type="password" placeholder="Senha" class="form-control" id="senhaNumber"  autocomplete="off" required>
               </div>
               <div class="form-group col-sm-2">
                 <label for="senhaNumber">Confirme sua senha</label>
-                <input type="password" placeholder="Senha" class="form-control" id="senhaNumber" pattern=".{6,}" title="Six or more characters" autocomplete="off" required>
+                <input type="password" placeholder="Senha" class="form-control" id="senhaNumberConfirm" autocomplete="off" required>
               </div>
             </div>
 
             <div class="form-row third">
               <div class="form-group">
                 <label for="cepNumber">CEP</label>
-                <input type="text" placeholder="Digite seu CEP" class="form-control" id="cepNumber" pattern=".{6,}" autocomplete="off" required>
+                <input type="text" placeholder="Digite seu CEP" class="form-control" id="cepNumber" autocomplete="off">
               </div>
 
               <div class="form-group">
                 <label for="estadoTxt">Estado</label>
-                <input type="text" placeholder="Estado" class="form-control" id="estadoTxt" minlength="4" autocomplete="off" required>
+                <input type="text" placeholder="Estado" class="form-control" id="estadoTxt" autocomplete="off">
               </div>
               <div class="form-group">
                 <label for="cidadeTxt">Cidade</label>
-                <input type="text" placeholder="Cidade" class="form-control" id="cidadeTxt" minlength="4" autocomplete="off" required>
+                <input type="text" placeholder="Cidade" class="form-control" id="cidadeTxt" autocomplete="off">
               </div>
             </div>
 
@@ -91,22 +102,22 @@
             <div class="form-row fourth">
               <div class="form-group col-sm-10">
                 <label for="ruaText">Rua</label>
-                <input type="text" placeholder="Rua" class="form-control" id="ruaText" minlength="4" autocomplete="off" required>
+                <input type="text" placeholder="Rua" class="form-control" id="ruaText" autocomplete="off">
               </div>
             </div>
 
             <div class="form-row fifth">
               <div class="form-group">
                 <label for="bairroTxt">Bairro</label>
-                <input type="text" placeholder="Bairro" class="form-control" id="bairroTxt" minlength="4" autocomplete="off" required>
+                <input type="text" placeholder="Bairro" class="form-control" id="bairroTxt" autocomplete="off">
               </div>
               <div class="form-group">
                 <label for="numNumber">Número</label>
-                <input type="text" placeholder="Nº" class="form-control" id="numNumber" minlength="4" autocomplete="off" required>
+                <input type="text" placeholder="Nº" class="form-control" id="numNumber" autocomplete="off">
               </div>
               <div class="form-group">
                 <label for="complNumber">Complemento</label>
-                <input type="text" placeholder="compl." class="form-control" id="complNumber" minlength="4" autocomplete="off" required>
+                <input type="text" placeholder="compl." class="form-control" id="complNumber" autocomplete="off">
               </div>
             </div>
             <div class="form-row divButton">
