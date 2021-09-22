@@ -14,14 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 const detalheApi = (url) => {
-  /*const res = await fetch(`https://restcountries.eu/rest/v2/name/${nome}`)*/
-  /*
-  const res = await fetch('https://restcountries.eu/rest/v2/all')
-  const data = await res.json()
-  const apiFiltrada = data.filter(item => item.name === nome)
-  detalheCard(apiFiltrada)
-  console.log(apiFiltrada)
-*/
+
   try {
     $.ajax({
       url: url,
