@@ -71,6 +71,15 @@ img {
   display: block;
 }
 
+section {
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
 .section {
   border-top: 8px solid #111014;
   background-color: #000000;
@@ -99,11 +108,11 @@ h3 {
   font-size: 1.5rem;
 }
 
-.h3Section{
-  font-size: 2.5rem
+.h3Section {
+  font-size: 2.5rem;
 }
 
-.p3Section{
+.p3Section {
   font-size: 1.5rem;
 }
 
