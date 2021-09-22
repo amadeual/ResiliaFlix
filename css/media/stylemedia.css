@@ -30,8 +30,8 @@
     overflow: hidden;
     width: 300px;
   }
-  .darkImgPoster{
-    width: 10rem;
+  .darkImgPoster {
+    width: 10rem !important;
   }
 
   .videoHome2 {
