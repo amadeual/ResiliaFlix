@@ -1,0 +1,20 @@
+@media (max-width: 770px) {
+  .members {
+    margin: 1%;
+    display: flex;
+    justify-items: center;
+    padding: 2%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img{
+    margin: 2%;
+  }
+}
